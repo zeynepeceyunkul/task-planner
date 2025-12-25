@@ -1,0 +1,65 @@
+.auth-container {
+  background-color: transparent; /* Arka plan videosu için */
+ align-items: center;/* İçerikleri yatayda ve dikeyde hizalamak için Flexbox kullanır */
+  justify-content: center;              /* Yatayda ortalar */
+  align-items: center;                  /* Dikeyde ortalar */
+  padding: 20px;
+  min-height: 45vh;
+  margin-top: 120px;
+}
+
+
+.auth-container form {
+  background-color: #dbc1d8; /* Yarı saydam beyaz arka plan – şeffaflık verir */
+  padding: 40px 30px;                         /* İçeriğin etrafında boşluk bırakır (üst/alt 40px, sağ/sol 30px) */
+  border-radius: 12px;                        /* Köşeleri yuvarlatır */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);   /* Yumuşak bir gölge efekti verir */
+  width: 85%;                                /* Responsive olarak tam genişlik alır */
+  max-width: 360px;                           /* En fazla 360px genişliğe ulaşır */
+  display: flex;                              /* Flexbox ile dikey hizalama yapılır */
+  flex-direction: column;                     /* Elemanları dikey sırayla dizer */
+  gap: 18px;                                  /* Elemanlar arasında 18px boşluk bırakır */
+  color: var(--text-dark);  /* Yazı rengini tema değişkeninden alır */
+}
+.auth-container h2 {
+  color: var(--text-dark);         /* Başlık rengini tema değişkeninden alır */
+  font-size: 24px;                 /* Başlık yazı boyutu */
+  text-align: center;             /* Ortalanmış başlık */
+  margin-bottom: 12px;            /* Altında boşluk bırakır */
+}
+.auth-container input {
+  width: 93%;
+  padding: 11px;                           /* İç boşluk – yazıların kutuda rahat durmasını sağlar */
+  font-size: 16px;                         /* Yazı boyutu */
+  border-radius: 8px;                     /* Köşeleri yuvarlatır */
+  border: 1px solid var(--border-light);   /* Kenar çizgisi – tema rengine bağlı */
+  background-color: var(--bg-light);       /* Arka plan rengini tema değişkeninden alır */
+  color: var(--text-dark);                 /* Yazı rengini tema değişkeninden alır */
+}
+
+.auth-container input::placeholder {
+  font-size: 14px;     /* Placeholder yazısının boyutu */
+  color: #888;         /* Placeholder yazısının rengi – açık gri */
+}
+
+.auth-container button {
+  padding: 14px;                    /* Buton iç boşluğu */
+  background-color: var(--btn-bg);  /* Butonun arka plan rengi (tema değişkeni) */
+  color: white;                     /* Yazı rengi – beyaz */
+  font-weight: bold;               /* Kalın yazı */
+  font-size: 16px;                 /* Yazı boyutu */
+  border: none;                    /* Kenar çizgisi yok */
+  border-radius: 10px;             /* Köşeleri yuvarlatır */
+  cursor: pointer;                 /* Üzerine gelince imleç değişir */
+  transition: background-color 0.3s; /* Hover geçişi yumuşak olur */
+}
+
+.auth-container button:hover {
+  background-color: var(--btn-hover); /* Üzerine gelince buton rengi değişir */
+}
+
+.auth-container p {
+  font-size: 14px;       /* Hata mesajı boyutu */
+  text-align: center;    /* Ortalanmış metin */
+  color: red;            /* Kırmızı renk (hata mesajı için) */
+}

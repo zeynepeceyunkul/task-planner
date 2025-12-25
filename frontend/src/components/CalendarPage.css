@@ -1,0 +1,293 @@
+:root {
+  --bg-light: #f5f5f5;
+  --sidebar-light: #ebdde9;
+  --sidebar-hover: #ffffff;
+  --header-bg: #dbc1d8;
+  --task-bg: #ffffff;
+  --btn-bg: #6E3D69;
+  --btn-hover: #502c4c;
+  --text-dark: #333333;
+  --border-light: #cccccc;
+  --hover-bg: #f1e6f0;
+}
+
+.fc-container {
+  padding: 20px;
+  background-color: var(--task-bg);
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.fc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fc-header h2 {
+  font-size: 20px;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.add-btn {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Ana takvim yapısı */
+.fc {
+  background-color: var(--task-bg);
+  color: var(--text-dark);
+  font-family: sans-serif;
+  border-radius: 20px;
+}
+
+/* Başlık: Haziran 2025 */
+.fc-toolbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+/* Buton grubu arası boşluk */
+.fc-button-group {
+  display: flex;
+  gap: 4px;
+}
+
+/* Üstteki butonlar */
+.fc-button {
+  background-color: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 12px;
+  font-size: 13px;
+  transition: background-color 0.2s ease;
+  
+}
+
+.fc-button:hover {
+  background-color: var(--btn-hover);
+}
+
+.fc-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.add-task-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.add-task-button:hover {
+  background-color: var(--sidebar-light);
+}
+
+
+.fc-button-active {
+  background-color: var(--btn-hover);
+  color: white;
+}
+
+/* FullCalendar başlık ve görünüm butonları */
+.fc .fc-button {
+  background-color: #6E3D69;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 4px 8px;
+  margin: 0 4px;
+   
+  transition: background-color 0.3s;
+}
+
+.fc .fc-button:hover {
+  background-color: #502c4c;
+}
+
+.fc .fc-button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+/* Aktif görünüm butonu */
+.fc .fc-button.fc-button-active {
+  background-color: #502c4c;
+}
+.fc .fc-button.fc-button-active {
+  background-color: #502c4c !important;  /* Koyu mor */
+  color: white !important;
+  border: none !important;
+}
+.fc .fc-button {
+  pointer-events: auto;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.fc .fc-toolbar {
+  pointer-events: auto;
+  z-index: 1;
+}
+
+/* Bugün butonunun tamamen gizlenmesi */
+.fc .fc-today-button {
+  display: none !important;
+}
+
+
+/* Önceki/sonraki ok butonları */
+.fc-prev-button,
+.fc-next-button {
+  background-color: var(--btn-bg);
+}
+
+.fc-prev-button:hover,
+.fc-next-button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Hafta başlıkları */
+.fc-col-header-cell {
+  background-color: var(--header-bg);
+  color: var(--text-dark);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+/* Gün kutuları */
+.fc-daygrid-day {
+  border: 1px solid var(--border-light);
+  transition: background-color 0.2s ease;
+}
+
+.fc-daygrid-day:hover {
+  background-color: var(--hover-bg);
+  cursor: pointer;
+}
+
+/* Gün sayıları */
+.fc-daygrid-day-number {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 6px 6px 0 0;
+}
+
+/* Gün içeriği */
+.fc-daygrid-day-frame {
+  padding: 4px;
+}
+
+
+/* Bugünün kutusunu özelleştir */
+.fc .fc-day-today {
+  background-color: #dbc1d8 !important; /* 💡 örnek: açık pembe */
+             
+}
+
+/* Takvim ızgarasının genel çerçevesi */
+.fc .fc-scrollgrid {
+  border-radius: 8px;          /* Tüm takvimi yumuşatır */
+  overflow: hidden;             /* Taşan köşe hatalarını önler */
+  border: 1px solid #ddd;       /* Hafif kenarlık opsiyonel */
+  
+}
+
+
+
+/* Event (görev) kutusu */
+.fc-event {
+  background-color: var(--btn-bg);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin-top: 4px;
+  border: none;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+/* Ay görünüm gövdesi */
+.fc-daygrid-body {
+  background-color: var(--task-bg);
+  border-radius: 0 0 12px 12px;
+}
+
+/* Haftalık görünüm slotları */
+.fc-timegrid-slot {
+  background-color: var(--bg-light);
+  border-color: var(--border-light);
+}
+
+/* 🌙 Karanlık Mod */
+.dark .fc-container,
+.dark .fc,
+.dark .fc-daygrid-body {
+  background-color: #1f1f1f;
+  color: #f3f4f6;
+}
+
+.dark .fc-header h2,
+.dark .fc-toolbar-title {
+  color: #f3f4f6;
+}
+
+.dark .fc-button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .fc-button:hover {
+  background-color: #444;
+}
+
+.dark .fc-button-active {
+  background-color: #555;
+  color: white;
+}
+
+.dark .fc-daygrid-day-number {
+  color: #ddd;
+}
+
+.dark .fc-col-header-cell {
+  background-color: #2a2a2a;
+  color: #f3f4f6;
+}
+
+.dark .fc-daygrid-day:hover {
+  background-color: #2a2a2a;
+}
+
+.dark .fc-event {
+  background-color: #a677b2;
+  color: white;
+}

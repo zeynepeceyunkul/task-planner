@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  margin-left: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle,
+.logout-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+}
+.logout-btn:hover {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ebdde9;
+}
+.user-name {
+  font-weight: bold;
+}
+
+/* Dark Mode */
+.dark .header {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+.dark .search-bar {
+  background-color: #2a2a2a;
+}
+
+.dark .search-bar input {
+  color: #fff;
+}
+
+.dark .header-right span,
+.dark .theme-toggle,
+.dark .logout-btn {
+  color: #fff;
+  background-color: #333;
+}
+.header-right button img {
+  vertical-align: middle;
+}
+.search-icon img {
+  vertical-align: middle;
+}

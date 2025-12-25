@@ -1,0 +1,115 @@
+.sidebar {
+  background-color: #ebdde9;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  margin-bottom: 0px;
+}
+
+.category-list {
+  transition: max-height 0.15s ease-out, padding 0.15s ease-out;
+}
+
+
+.category-list.closed {
+  max-height: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+}
+
+.category-list.open {
+  max-height: 500px;
+  padding: 10px;
+  opacity: 1;
+  transition: all 0.15s ease-out;
+}
+
+
+.toggle-button {
+  font-size: 20px;
+  background-color: #ddd;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #bbb;
+}
+
+.sidebar h4 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  color: #333;
+}
+
+.sidebar li {
+  cursor: pointer;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.sidebar li:hover {
+  background-color: #f4f4f4;
+}
+
+.sidebar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.triangle-icon {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.triangle-icon.up {
+  border-bottom: 8px solid #333;
+  border-radius: 4px;
+}
+
+.triangle-icon.down {
+  border-top: 8px solid #333;
+  border-radius: 4px;
+}
+
+.sidebar-header h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+/* "Tümü" satırına özel boşluk azaltma */
+.sidebar li.kategori-tumu {
+  margin-bottom: 2px;
+}
+.sidebar li {
+  cursor: pointer;
+  margin-bottom: 6px;
+  font-size: 16px;
+  padding: 6px 8px;
+  border-radius: 6px; /* 🔄 daha yumuşak köşe */
+  transition: background-color 0.2s ease;
+}
+
+.sidebar li:hover {
+  background-color: #f0f0f0; /* ✅ daha yumuşak bir gri */
+  color: #333;
+}
+
